@@ -79,3 +79,22 @@ function maskify(cc) {
     }
     
   }
+
+  // You're a square
+
+  var isSquare = function(n){
+    let numberCheck;
+    for (let i = 0; i < n + 1; i++){
+      numberCheck = n / i;
+      if (i === numberCheck){
+        return true;
+      }
+    }
+    if(n < 0) {
+      return false; // fix me 
+    } else if (numberCheck == 1){
+      return false;
+    } else {
+      return true;
+    }
+  }
