@@ -107,3 +107,18 @@ function maskify(cc) {
      }
      return result;
    }
+
+   //merge two arrays
+
+   function mergeArrays(a, b) {
+    // your code here
+    const maxLength = Math.max(a.length, b.length);
+    let mergedArr = [];
+    
+    for (let i = 0; i < maxLength; i++){
+      mergedArr.push(a[i]);
+      mergedArr.push(b[i]);
+  //     console.log(b[i])
+    }
+    return mergedArr.filter((value) => value !== undefined);
+  }
