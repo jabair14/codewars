@@ -148,3 +148,13 @@ function maskify(cc) {
     }
     return result;
   }
+
+  //converst string to camel case 
+
+  function toCamelCase(str) {
+    var regExp =/[-_]\w/ig;
+   
+         return str.replace(regExp,function(match){
+               return match.charAt(1).toUpperCase();
+          });
+   }
