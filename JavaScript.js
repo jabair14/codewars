@@ -158,3 +158,9 @@ function maskify(cc) {
                return match.charAt(1).toUpperCase();
           });
    }
+
+   //array.diff 
+
+   function arrayDiff(a, b) {
+    return a.filter(e => !b.includes(e));
+  }
