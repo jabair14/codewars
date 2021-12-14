@@ -183,4 +183,27 @@ function maskify(cc) {
     return count;
   }
 
+  //beginner series #3 Sum of Numbers
+
+  function getSum( a,b )
+{
+ let lower, higher;
+ let result = 0;
   
+  if ( a == b) {
+    return a;
+  } else {
+    if (a > b) {
+      higher = a;
+      lower = b;
+    } else {
+      higher = b;
+      lower = a;
+    } 
+    for ( i = lower; i <= higher; i++){
+      result += i;
+    }
+  }
+  return result;
+   //Good luck!
+}
