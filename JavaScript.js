@@ -164,3 +164,23 @@ function maskify(cc) {
    function arrayDiff(a, b) {
     return a.filter(e => !b.includes(e));
   }
+
+
+  //persistent bugger 
+
+  function persistence(num) {
+    function multiply(n){
+      return n.reduce(function(a,b){
+        return a * b });
+    }
+    let count = 0;
+    
+    while(num.toString().length > 1){
+      num = num.toString().split("");
+      num = multiply(num);
+      count ++;
+    }
+    return count;
+  }
+
+  
