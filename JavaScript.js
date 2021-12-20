@@ -205,5 +205,49 @@ function maskify(cc) {
     }
   }
   return result;
-   //Good luck!
+   
+}
+
+//reverse words 
+function reverseWords(str) {
+  
+  var splitStr = str.split(" ").map(
+  word => word.split("").reverse().join("")
+  ).join(" ")
+  
+  return splitStr 
+//   console.log(splitStr)
+  
+//   var reverseStr = splitStr.reverse()
+//   var joinStr = reverseStr.join("")
+}
+
+//testing 1-2-3
+var number=function(array){
+  return array.map((line, index)=>
+    `${index + 1}: ${line}`
+    )
+  //your awesome code here
+}
+
+//Is a number prime?
+
+function isPrime(num) {
+  if (num < 2) {
+    return false;
+  }
+  if (num ===2 ){
+    return true;
+  }
+  
+  const dividor = Math.sqrt(num) + 1;
+  
+  for (let i = 2; i < dividor; i++) {
+     if (num % i === 0) {
+       return false;
+     }
+  }
+  return true;
+  
+  //TODO
 }
