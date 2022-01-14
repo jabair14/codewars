@@ -265,3 +265,22 @@ const highestRank = (arr) => [...arr.reduce((acc, cur) => {
     
     return b[0] - a[0];
   })[0][0];
+
+
+  //count characters in your string
+  function count (string) {   
+    // The function code should be here
+    let newArr = new Array()
+    newArr = string.split('')
+    let obj = {}
+    if (!string || string.length == 0){
+      return obj
+    } else {
+      for(let i = 0; i <newArr.length; ++i){
+        if(!obj[newArr[i]])
+          obj[newArr[i]] = 0;
+        ++obj[newArr[i]];
+      }
+    }
+   return obj
+  }
