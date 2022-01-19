@@ -284,3 +284,20 @@ const highestRank = (arr) => [...arr.reduce((acc, cur) => {
     }
    return obj
   }
+
+  //descending order
+
+  function descendingOrder(n){
+  
+    let numStr = n.toString().split('').map(function(item){
+      return +item;
+    })
+  //     console.log(numStr)
+    
+    let orderedArr = numStr.sort(function(a,b) {
+      return b-a
+    })
+    
+    let orderedStr = orderedArr.join("");
+    return parseInt(orderedStr)
+  }
